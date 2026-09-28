@@ -10,11 +10,18 @@ ROOT = Path(__file__).resolve().parents[2]
 OUTPUT = ROOT / "MANIFEST_SHA256.csv"
 
 
+
+def stable_bytes(path: Path) -> bytes:
+    """Return bytes as checked out under the repository LF policy."""
+    data = path.read_bytes()
+    if b"\x00" not in data:
+        data = data.replace(b"\r\n", b"\n")
+    return data
+
 def sha256(path: Path) -> str:
     digest = hashlib.sha256()
-    with path.open("rb") as handle:
-        for block in iter(lambda: handle.read(1024 * 1024), b""):
-            digest.update(block)
+    for block in [stable_bytes(path)]:
+        digest.update(block)
     return digest.hexdigest()
 
 
@@ -28,7 +35,7 @@ def main() -> None:
         rows.append(
             {
                 "relative_path": path.relative_to(ROOT).as_posix(),
-                "size_bytes": path.stat().st_size,
+                "size_bytes": len(stable_bytes(path)),
                 "sha256": sha256(path),
             }
         )
