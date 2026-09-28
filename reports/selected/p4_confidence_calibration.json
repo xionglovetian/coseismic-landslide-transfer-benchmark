@@ -1,0 +1,174 @@
+{
+  "source_val": {
+    "pixels": 8404992,
+    "error_rate": 0.058954487999512674,
+    "mean_confidence": 0.9222396446017959,
+    "positive_rate": 0.1496538009792276,
+    "high_confidence_pixels": 6262536,
+    "high_confidence_fraction": 0.7450971993786549,
+    "high_confidence_error_rate": 0.0068671860728624955,
+    "bins": [
+      {
+        "lower": 0.5,
+        "upper": 0.7,
+        "pixels": 717107,
+        "pixel_fraction": 0.08531917698434455,
+        "error_rate": 0.3724339603434355,
+        "mean_confidence": 0.6031218731852538
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.9,
+        "pixels": 1425349,
+        "pixel_fraction": 0.1695836236370005,
+        "error_rate": 0.13009515564258298,
+        "mean_confidence": 0.821369513174246
+      },
+      {
+        "lower": 0.9,
+        "upper": 0.99,
+        "pixels": 2329401,
+        "pixel_fraction": 0.2771449395787646,
+        "error_rate": 0.016577223071510657,
+        "mean_confidence": 0.9583104425655592
+      },
+      {
+        "lower": 0.99,
+        "upper": 1.0,
+        "pixels": 3933135,
+        "pixel_fraction": 0.46795225979989036,
+        "error_rate": 0.0011164122258707112,
+        "mean_confidence": 0.9956145463975461
+      }
+    ]
+  },
+  "hokkaido_iburi_tobu": {
+    "pixels": 24313856,
+    "error_rate": 0.26121191965601837,
+    "mean_confidence": 0.879336343621308,
+    "positive_rate": 0.19874387674254548,
+    "high_confidence_pixels": 14762108,
+    "high_confidence_fraction": 0.6071479571154818,
+    "high_confidence_error_rate": 0.12082319137619099,
+    "bins": [
+      {
+        "lower": 0.5,
+        "upper": 0.7,
+        "pixels": 3786371,
+        "pixel_fraction": 0.15572893908724308,
+        "error_rate": 0.4796038211786431,
+        "mean_confidence": 0.5992736206517484
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.9,
+        "pixels": 5765377,
+        "pixel_fraction": 0.2371231037972751,
+        "error_rate": 0.4772465009660253,
+        "mean_confidence": 0.8141000461271873
+      },
+      {
+        "lower": 0.9,
+        "upper": 0.99,
+        "pixels": 6975350,
+        "pixel_fraction": 0.28688785522131904,
+        "error_rate": 0.18653013827263148,
+        "mean_confidence": 0.9568435057246232
+      },
+      {
+        "lower": 0.99,
+        "upper": 1.0,
+        "pixels": 7786758,
+        "pixel_fraction": 0.32026010189416276,
+        "error_rate": 0.061963143069297906,
+        "mean_confidence": 0.9943898371480467
+      }
+    ]
+  },
+  "lombok": {
+    "pixels": 7143424,
+    "error_rate": 0.1389367339807913,
+    "mean_confidence": 0.9362391769339186,
+    "positive_rate": 0.12366128624032396,
+    "high_confidence_pixels": 5661920,
+    "high_confidence_fraction": 0.7926058987958715,
+    "high_confidence_error_rate": 0.07092470398733998,
+    "bins": [
+      {
+        "lower": 0.5,
+        "upper": 0.7,
+        "pixels": 437383,
+        "pixel_fraction": 0.061228760885536124,
+        "error_rate": 0.4585271947012115,
+        "mean_confidence": 0.6038025415734394
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.9,
+        "pixels": 1044121,
+        "pixel_fraction": 0.14616534031859232,
+        "error_rate": 0.3738666304001165,
+        "mean_confidence": 0.8236160011103238
+      },
+      {
+        "lower": 0.9,
+        "upper": 0.99,
+        "pixels": 1996052,
+        "pixel_fraction": 0.2794251048236812,
+        "error_rate": 0.16578976900401393,
+        "mean_confidence": 0.9591087846471434
+      },
+      {
+        "lower": 0.99,
+        "upper": 1.0,
+        "pixels": 3665868,
+        "pixel_fraction": 0.5131807939721904,
+        "error_rate": 0.01927101575943269,
+        "mean_confidence": 0.9955281299937013
+      }
+    ]
+  },
+  "palu": {
+    "pixels": 13385728,
+    "error_rate": 0.1394450118813112,
+    "mean_confidence": 0.8979555242210444,
+    "positive_rate": 0.1334482517499235,
+    "high_confidence_pixels": 8984194,
+    "high_confidence_fraction": 0.6711770924973225,
+    "high_confidence_error_rate": 0.02333231005474726,
+    "bins": [
+      {
+        "lower": 0.5,
+        "upper": 0.7,
+        "pixels": 1752684,
+        "pixel_fraction": 0.13093677086520808,
+        "error_rate": 0.4531712504935288,
+        "mean_confidence": 0.5995176377080725
+      },
+      {
+        "lower": 0.7,
+        "upper": 0.9,
+        "pixels": 2648850,
+        "pixel_fraction": 0.1978861366374694,
+        "error_rate": 0.3256828434981218,
+        "mean_confidence": 0.8137509898900702
+      },
+      {
+        "lower": 0.9,
+        "upper": 0.99,
+        "pixels": 3527984,
+        "pixel_fraction": 0.26356310243268055,
+        "error_rate": 0.04555179388568656,
+        "mean_confidence": 0.9590726729264858
+      },
+      {
+        "lower": 0.99,
+        "upper": 1.0,
+        "pixels": 5456210,
+        "pixel_fraction": 0.407613990064642,
+        "error_rate": 0.008965197453910315,
+        "mean_confidence": 0.9951827774532082
+      }
+    ]
+  }
+}

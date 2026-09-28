@@ -1,0 +1,4 @@
+﻿regime,run,train_images,batch_size,epochs,steps_per_epoch,optimizer_steps,image_exposures,patch_exposures,step_ratio_vs_cas,exposure_ratio_vs_cas,extra_exposures_vs_cas
+CAS-only continuation,bench_v2_cas_retrain20,1795,32,20,56,1120,35840,35840,1.0,1.0,0
+pooled-source continuation,bench_v2_extended_uniform,11382,32,20,355,7100,227200,227200,6.339285714285714,6.339285714285714,191360
+pooled-source continuation,bench_v2_extended_resunet,11382,32,20,355,7100,227200,227200,6.339285714285714,6.339285714285714,191360

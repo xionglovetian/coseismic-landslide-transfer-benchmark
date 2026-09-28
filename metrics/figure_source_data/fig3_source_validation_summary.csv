@@ -1,0 +1,5 @@
+model,source_val_iou_mean,source_val_iou_std,n_seeds
+SegFormer-B0,0.593,0.018,3
+ResUNet,0.682,0.007,3
+Bottleneck-LiteASK,0.719,0.006,3
+DeepLabV3+,0.611,0.004,3

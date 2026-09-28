@@ -1,0 +1,17 @@
+﻿mode,early_epoch,comparison,region,delta_iou
+full,20,epoch20-epoch50,hokkaido_iburi_tobu,-0.017291766215328463
+full,20,epoch20-epoch50,lombok,-0.020429101468637106
+full,20,epoch20-epoch50,palu,-0.004324748252462957
+full,20,epoch20-epoch50,macro,-0.014015205312142787
+full,30,epoch30-epoch50,hokkaido_iburi_tobu,0.01787643895144181
+full,30,epoch30-epoch50,lombok,-0.0007482601872303984
+full,30,epoch30-epoch50,palu,0.0015817924953864804
+full,30,epoch30-epoch50,macro,0.006236657086532649
+decoder-only,20,epoch20-epoch50,hokkaido_iburi_tobu,-0.0028663939161382435
+decoder-only,20,epoch20-epoch50,lombok,-0.0037270927116594757
+decoder-only,20,epoch20-epoch50,palu,-0.01294733337818256
+decoder-only,20,epoch20-epoch50,macro,-0.006513606668660077
+decoder-only,30,epoch30-epoch50,hokkaido_iburi_tobu,-0.000738096325872295
+decoder-only,30,epoch30-epoch50,lombok,-0.0051980441825049475
+decoder-only,30,epoch30-epoch50,palu,-0.0014209413840232943
+decoder-only,30,epoch30-epoch50,macro,-0.002452360630800149

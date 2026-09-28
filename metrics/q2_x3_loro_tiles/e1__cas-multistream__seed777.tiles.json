@@ -1,0 +1,21 @@
+{
+  "model": "BottleneckLiteASKUNetPlusPlus",
+  "checkpoint": "D:\\landslide_unet_project\\outputs\\q2_x3_bottleneckliteask_cas-multistream_seed777\\final_model.pth",
+  "run_id": "e1__cas-multistream__seed777",
+  "regime": "cas-multistream",
+  "role": "placebo",
+  "seed": 777,
+  "step": 1120,
+  "regions": [
+    "hokkaido_iburi_tobu",
+    "jiuzhai_valley",
+    "lombok",
+    "longxi_river",
+    "palu",
+    "wenchuan"
+  ],
+  "threshold": 0.5,
+  "rows": 11344,
+  "output": "D:\\landslide_unet_project\\reports\\q2_x3_loro_tiles\\e1__cas-multistream__seed777.tiles.csv",
+  "elapsed_seconds": 55.612985610961914
+}

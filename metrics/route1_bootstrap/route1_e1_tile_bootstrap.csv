@@ -1,0 +1,45 @@
+﻿region,region_label,endpoint,mean_delta,ci95_low,ci95_high,probability_positive,probability_negative,n_bootstrap,experiment,contrast,mode,buffer_m
+target_macro,Target Macro,iou,0.03550121880948788,-0.00047739354027028776,0.09484313392965042,0.9658,0.0342,10000,E1,pooled-cas-multistream,,na
+target_macro,Target Macro,balanced_iou,0.0425781451754545,-0.016484458776295462,0.12395549487692566,0.8526,0.1474,10000,E1,pooled-cas-multistream,,na
+target_macro,Target Macro,mcc,0.08506191020994204,0.001510121032503054,0.2307714641411368,0.9891,0.0109,10000,E1,pooled-cas-multistream,,na
+target_macro,Target Macro,precision,0.10124596632130894,-0.004701020151033839,0.2819037868909679,0.8957,0.1043,10000,E1,pooled-cas-multistream,,na
+target_macro,Target Macro,recall,0.015167984712634915,-0.02897909758221339,0.061159421354270264,0.7378,0.2622,10000,E1,pooled-cas-multistream,,na
+target_macro,Target Macro,f1,0.05556399760693584,-0.0007930674260931692,0.14694143469712243,0.967,0.033,10000,E1,pooled-cas-multistream,,na
+target_macro,Target Macro,dice,0.055563997606947337,-0.0007930674261533608,0.14694143469715068,0.967,0.033,10000,E1,pooled-cas-multistream,,na
+target_macro,Target Macro,accuracy,0.048515832403341404,-0.03250266297755499,0.14963090079171312,0.8513,0.1487,10000,E1,pooled-cas-multistream,,na
+target_macro,Target Macro,bf1_2,nan,nan,nan,0.0,0.0,10000,E1,pooled-cas-multistream,,na
+target_macro,Target Macro,bf1_4,nan,nan,nan,0.0,0.0,10000,E1,pooled-cas-multistream,,na
+target_macro,Target Macro,hd95,-3.4505756101242167,-15.565396521719828,4.574600872496114,0.2952,0.7048,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,iou,0.10038310602518428,0.06421208198620028,0.14561022738286986,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,balanced_iou,0.1290451301285839,0.10625691986981996,0.16463610231182413,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,mcc,0.2412472665507893,0.1816082383864668,0.3255038098992195,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,precision,0.29961335699655556,0.2174168529014595,0.4268315038586235,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,recall,0.009030707615145702,-0.04818179589392446,0.04350150538869725,0.7395,0.2605,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,f1,0.1551861731655396,0.10276496351249287,0.217783688756365,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,dice,0.1551861731655713,0.1027649635125507,0.21778368875639734,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,accuracy,0.15386259587948536,0.11995286144657596,0.17886879639055744,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,bf1_2,nan,nan,nan,0.0,0.0,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,bf1_4,nan,nan,nan,0.0,0.0,10000,E1,pooled-cas-multistream,,na
+hokkaido_iburi_tobu,Hokkaido,hd95,3.0395374499193317,-1.3387704748099196,7.900639675332867,0.8924,0.1076,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,iou,-0.0005231162836772107,-0.005432218599019038,0.004908705992339685,0.4123,0.5877,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,balanced_iou,-0.0171711604585279,-0.023262233071289593,-0.010949812793737993,0.0,1.0,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,mcc,0.0030126071677501107,-0.008287996465228578,0.015059651060165904,0.6942,0.3058,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,precision,-0.005214906791415133,-0.011240996888670026,0.0008756375796099579,0.0483,0.9517,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,recall,0.06153511434470315,0.04342888548801257,0.08230566247050389,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,f1,-0.0009425514683284361,-0.009709300833245206,0.008773144089812359,0.4121,0.5879,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,dice,-0.0009425514683896047,-0.009709300833307951,0.008773144089753328,0.4121,0.5879,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,accuracy,-0.03330191049371656,-0.04135586099887114,-0.02541063057902392,0.0,1.0,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,bf1_2,nan,nan,nan,0.0,0.0,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,bf1_4,nan,nan,nan,0.0,0.0,10000,E1,pooled-cas-multistream,,na
+lombok,Lombok,hd95,-16.349004451012892,-21.41596653138809,-10.42500347199571,0.0,1.0,10000,E1,pooled-cas-multistream,,na
+palu,Palu,iou,0.006643666686956558,0.0035381393375466057,0.009938562771318408,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+palu,Palu,balanced_iou,0.015860465856307498,0.011064647296436319,0.020756925790296272,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+palu,Palu,mcc,0.010925856911286733,0.002064424943525067,0.019695234965970074,0.993,0.007,10000,E1,pooled-cas-multistream,,na
+palu,Palu,precision,0.0093394487587864,0.005820879176594934,0.013241927305157587,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+palu,Palu,recall,-0.0250618678219441,-0.05858558269005984,0.001031038994326155,0.0341,0.9659,10000,E1,pooled-cas-multistream,,na
+palu,Palu,f1,0.012448371123596376,0.006632107453348482,0.01858599722647469,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+palu,Palu,dice,0.012448371123660323,0.006632107453410968,0.018585997226549276,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+palu,Palu,accuracy,0.0249868118242554,0.016662932590093944,0.03399706015242508,1.0,0.0,10000,E1,pooled-cas-multistream,,na
+palu,Palu,bf1_2,nan,nan,nan,0.0,0.0,10000,E1,pooled-cas-multistream,,na
+palu,Palu,bf1_4,nan,nan,nan,0.0,0.0,10000,E1,pooled-cas-multistream,,na
+palu,Palu,hd95,2.9577401707209106,-0.009546099374589513,5.647904687433216,0.9747,0.0253,10000,E1,pooled-cas-multistream,,na

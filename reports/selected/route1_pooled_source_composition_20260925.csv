@@ -1,0 +1,12 @@
+﻿treatment,domain,source_role,n_samples,n_domains,sample_weight,domain_sampling_mass,expected_exposures_at_35840,within_domain_probability
+"pooled","cas","source-only continuation","1795","5","1 / 1795","0.200000","7168","0.000557103064"
+"pooled","longxi_river","added source region","2504","5","1 / 2504","0.200000","7168","0.000399361022"
+"pooled","wenchuan","added source region","178","5","1 / 178","0.200000","7168","0.005617977528"
+"pooled","jiuzhai_valley","added source region","5925","5","1 / 5925","0.200000","7168","0.000168776371"
+"pooled","moxitaidi","added source region","980","5","1 / 980","0.200000","7168","0.001020408163"
+"pooled","TOTAL","","11382","5","","1","35840",""
+"cas-multistream","cas_replay_0","replay placebo","1795","5","1 / 1795","0.200000","7168","0.000557103064"
+"cas-multistream","cas_replay_1","replay placebo","1795","5","1 / 1795","0.200000","7168","0.000557103064"
+"cas-multistream","cas_replay_2","replay placebo","1795","5","1 / 1795","0.200000","7168","0.000557103064"
+"cas-multistream","cas_replay_3","replay placebo","1795","5","1 / 1795","0.200000","7168","0.000557103064"
+"cas-multistream","cas_replay_4","replay placebo","1795","5","1 / 1795","0.200000","7168","0.000557103064"

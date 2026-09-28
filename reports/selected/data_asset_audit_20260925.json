@@ -1,0 +1,338 @@
+{
+  "generated_at": "2026-09-25T11:02:08+08:00",
+  "project_root": "D:\\landslide_unet_project",
+  "decision": "NO_GO_ROUTE2_108_RUNS",
+  "fallback": "ROUTE_A_R1_TILE_BENCHMARK",
+  "target": {
+    "manifest": "D:\\landslide_unet_project\\data\\processed\\benchmark_v2_regions_512\\manifest_benchmark_v2.csv",
+    "n_pairs": 12324,
+    "n_missing_images": 0,
+    "n_missing_masks": 0,
+    "all_declared_512": true,
+    "n_duplicate_ids": 0,
+    "n_duplicate_image_sha256": 0,
+    "n_duplicate_mask_sha256": 81,
+    "regions": {
+      "hokkaido_iburi_tobu": {
+        "n": 1484,
+        "zero_foreground": 0,
+        "min_foreground_fraction": 0.001056671142578125,
+        "max_foreground_fraction": 0.6123619079589844,
+        "mean_foreground_fraction": 0.10253809854348073
+      },
+      "jiuzhai_valley": {
+        "n": 5925,
+        "zero_foreground": 0,
+        "min_foreground_fraction": 0.00104522705078125,
+        "max_foreground_fraction": 1.0,
+        "mean_foreground_fraction": 0.23737426564663272
+      },
+      "lombok": {
+        "n": 436,
+        "zero_foreground": 0,
+        "min_foreground_fraction": 0.001003265380859375,
+        "max_foreground_fraction": 0.6055412292480469,
+        "mean_foreground_fraction": 0.030652326181394244
+      },
+      "longxi_river": {
+        "n": 2504,
+        "zero_foreground": 0,
+        "min_foreground_fraction": 0.0010223388671875,
+        "max_foreground_fraction": 1.0,
+        "mean_foreground_fraction": 0.1452800244949877
+      },
+      "moxitaidi": {
+        "n": 980,
+        "zero_foreground": 0,
+        "min_foreground_fraction": 0.001079559326171875,
+        "max_foreground_fraction": 0.949066162109375,
+        "mean_foreground_fraction": 0.105293912303691
+      },
+      "palu": {
+        "n": 817,
+        "zero_foreground": 0,
+        "min_foreground_fraction": 0.001003265380859375,
+        "max_foreground_fraction": 0.18976974487304688,
+        "mean_foreground_fraction": 0.012114096446603427
+      },
+      "wenchuan": {
+        "n": 178,
+        "zero_foreground": 0,
+        "min_foreground_fraction": 0.001285552978515625,
+        "max_foreground_fraction": 0.22216415405273438,
+        "mean_foreground_fraction": 0.04550526651103845
+      }
+    },
+    "metadata_columns": [
+      "acquisition",
+      "augmented",
+      "authorization",
+      "benchmark_version",
+      "dataset",
+      "eligible_external",
+      "exclusion_reason",
+      "foreground_fraction",
+      "ground_resolution_m",
+      "group_id",
+      "height",
+      "id",
+      "image_path",
+      "image_sha256",
+      "mask_path",
+      "mask_sha256",
+      "region",
+      "region_name",
+      "sensor",
+      "source",
+      "source_archive",
+      "source_image_member",
+      "source_mask_member",
+      "split",
+      "width"
+    ],
+    "present_scene_or_geolocation_columns": [],
+    "present_annotation_provenance_columns": []
+  },
+  "source_masks": {
+    "manifest_rows": 9270,
+    "unique_base_ids": 2727,
+    "rows_by_split": {
+      "test": 273,
+      "train": 8724,
+      "val": 273
+    },
+    "zero_mask_rows_by_split": {
+      "test": 76,
+      "train": 2156,
+      "val": 69
+    },
+    "base_ids_by_split": {
+      "test": 273,
+      "train": 2181,
+      "val": 273
+    },
+    "zero_base_ids_by_split": {
+      "test": 76,
+      "train": 539,
+      "val": 69
+    },
+    "source_readme_contact": "zhaozhenyu1@stu.ynu.edu.cn",
+    "source_readme_limit": "Original 1536x1536 rasters were not included; local originals are 224x224 crops."
+  },
+  "source_rasters": {
+    "rasterio_available": true,
+    "n_tif": 11181,
+    "by_parent": {
+      "1": 273,
+      "Images": 10908
+    },
+    "shape_dtype_profiles": {
+      "(3, 224, 224, 'uint8')": 8748,
+      "(4, 224, 224, 'uint8')": 2433
+    },
+    "crs_counts": {
+      "None": 11181
+    },
+    "transform_counts": {
+      "(1.0, 0.0, 0.0, 0.0, 1.0, 0.0)": 11181
+    },
+    "n_with_non_identity_transform": 0,
+    "n_with_crs": 0,
+    "errors": []
+  },
+  "filesystem": {
+    "geospatial_sidecars": [],
+    "n_geospatial_sidecars": 0,
+    "archives": [
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_archives\\data-20260920T012408Z-1-001.zip",
+        "bytes": 1227039521
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_archives\\test-20260920T012410Z-1-001.zip",
+        "bytes": 32450881
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_archives\\原始数据（2727张）-20260920T012029Z-1-001.zip",
+        "bytes": 305102543
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_archives\\可直接进行实验的数据集-20260920T011957Z-1-001.zip",
+        "bytes": 1259528821
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_archives\\论文所展示当次ResUnet-BFA实验数据记录-20260920T012026Z-1-001.zip",
+        "bytes": 27996819
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_original\\原始数据（2727张）\\Images.rar",
+        "bytes": 303264175
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_original\\原始数据（2727张）\\Masks.rar",
+        "bytes": 1780768
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_ready\\可直接进行实验的数据集\\data\\Images.rar",
+        "bytes": 1219514215
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_ready\\可直接进行实验的数据集\\data\\Masks.rar",
+        "bytes": 7310161
+      },
+      {
+        "path": "D:\\landslide_unet_project\\reports\\resunet_bfa_experiment_records\\论文所展示当次ResUnet-BFA实验数据记录\\测试图像识别结果.rar",
+        "bytes": 27947871
+      }
+    ],
+    "archive_member_extensions": {
+      ".tif": 546,
+      ".txt": 9,
+      ".rar": 7,
+      "<none>": 2,
+      ".docx": 1,
+      ".png": 1
+    },
+    "suspicious_geospatial_members": [],
+    "unreadable_archives": [
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_original\\原始数据（2727张）\\Images.rar",
+        "reason": "RAR/7z listing not available with stdlib"
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_original\\原始数据（2727张）\\Masks.rar",
+        "reason": "RAR/7z listing not available with stdlib"
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_ready\\可直接进行实验的数据集\\data\\Images.rar",
+        "reason": "RAR/7z listing not available with stdlib"
+      },
+      {
+        "path": "D:\\landslide_unet_project\\data\\raw\\resunet_bfa_ready\\可直接进行实验的数据集\\data\\Masks.rar",
+        "reason": "RAR/7z listing not available with stdlib"
+      },
+      {
+        "path": "D:\\landslide_unet_project\\reports\\resunet_bfa_experiment_records\\论文所展示当次ResUnet-BFA实验数据记录\\测试图像识别结果.rar",
+        "reason": "RAR/7z listing not available with stdlib"
+      }
+    ]
+  },
+  "fewshot": {
+    "support_rows": 180,
+    "evaluation_rows": 7206,
+    "support_eval_id_overlap": 0,
+    "support_eval_group_overlap": 0,
+    "support_columns": [
+      "component_id",
+      "component_size",
+      "foreground_fraction",
+      "group_id",
+      "id",
+      "image_path",
+      "mask_path",
+      "region",
+      "seed",
+      "shot",
+      "support_rank",
+      "x",
+      "y"
+    ],
+    "eval_columns": [
+      "component_id",
+      "component_size",
+      "foreground_fraction",
+      "group_id",
+      "id",
+      "image_path",
+      "mask_path",
+      "region",
+      "seed",
+      "shot_scope",
+      "x",
+      "y"
+    ],
+    "has_independent_annotator_column": false,
+    "buffered_eval_counts": {
+      "eval_seed2026_buffer256.csv": 673,
+      "eval_seed2026_buffer512.csv": 673,
+      "eval_seed2026_hokkaido_iburi_tobu_buffer256.csv": 1152,
+      "eval_seed2026_hokkaido_iburi_tobu_buffer512.csv": 1152,
+      "eval_seed2026_lombok_buffer256.csv": 196,
+      "eval_seed2026_lombok_buffer512.csv": 196,
+      "eval_seed2026_palu_buffer256.csv": 673,
+      "eval_seed2026_palu_buffer512.csv": 673,
+      "eval_seed42_buffer256.csv": 681,
+      "eval_seed42_buffer512.csv": 681,
+      "eval_seed42_hokkaido_iburi_tobu_buffer256.csv": 1150,
+      "eval_seed42_hokkaido_iburi_tobu_buffer512.csv": 1150,
+      "eval_seed42_lombok_buffer256.csv": 214,
+      "eval_seed42_lombok_buffer512.csv": 214,
+      "eval_seed42_palu_buffer256.csv": 681,
+      "eval_seed42_palu_buffer512.csv": 681,
+      "eval_seed777_buffer256.csv": 682,
+      "eval_seed777_buffer512.csv": 682,
+      "eval_seed777_hokkaido_iburi_tobu_buffer256.csv": 1151,
+      "eval_seed777_hokkaido_iburi_tobu_buffer512.csv": 1151,
+      "eval_seed777_lombok_buffer256.csv": 217,
+      "eval_seed777_lombok_buffer512.csv": 217,
+      "eval_seed777_palu_buffer256.csv": 682,
+      "eval_seed777_palu_buffer512.csv": 682
+    }
+  },
+  "gates": [
+    {
+      "gate_id": "GEO-SPLIT",
+      "gate_name": "Source geospatial / defensible spatial split",
+      "status": "FAIL",
+      "required_asset": "Source scene IDs, tile coordinates, CRS/geotransform, polygons, or documented spatial blocks",
+      "evidence": "All 11181 local TIFs have no CRS (0 with CRS) and identity transforms; 0 vector/geospatial-sidecar files; source manifests have no scene/coordinate/CRS fields.",
+      "consequence": "Gate 4 cannot pass; source train/validation independence and source retention cannot be verified.",
+      "next_action": "Request original 1536x1536 source rasters plus scene IDs, geotransforms, tile polygons, and split assignments from the data provider."
+    },
+    {
+      "gate_id": "COMPLETE-MAPS",
+      "gate_name": "Complete target mosaics with negatives",
+      "status": "FAIL",
+      "required_asset": "Full-scene target imagery and labels including stable-slope/background areas",
+      "evidence": "Target benchmark has 12324 positive 512-pixel chips and 0 zero-foreground chips; target source archives are absent locally; only cropped tiles are retained.",
+      "consequence": "Gate 3 cannot pass; complete-map precision, false-positive area, omitted area, and operational recommendation are unavailable.",
+      "next_action": "Acquire or reconstruct complete licensed target mosaics, then tile without positivity filtering and retain empty chips."
+    },
+    {
+      "gate_id": "INDEPENDENT-LABELS",
+      "gate_name": "Independent target validation labels",
+      "status": "FAIL",
+      "required_asset": "A validation partition generated independently of support/adaptation labels",
+      "evidence": "Support and evaluation ID overlap is 0, but both come from the same target manifest and component inventory; no annotator, agreement, or validation-source fields are present.",
+      "consequence": "Adaptation is a within-label-inventory holdout result, not an independently annotated validation result.",
+      "next_action": "Create a second annotation campaign/team or use an agency inventory with documented provenance and agreement; keep physical buffers."
+    },
+    {
+      "gate_id": "CHRONOLOGY",
+      "gate_name": "Prospective or defensible chronological holdout",
+      "status": "PARTIAL",
+      "required_asset": "A post-cutoff event or source/target acquisition chronology sufficient for a retrospective temporal holdout",
+      "evidence": "Target acquisition periods exist at region level, but source training imagery has no acquisition date and target labels are not independent.",
+      "consequence": "A next-earthquake/prospective claim remains unsupported; only a bounded retrospective comparison may be considered.",
+      "next_action": "Acquire source chronology and freeze a cutoff and model-selection rule before evaluating a later event."
+    },
+    {
+      "gate_id": "REPRODUCIBILITY",
+      "gate_name": "Public reproducibility package",
+      "status": "PARTIAL",
+      "required_asset": "Repository identifier, code, splits, metric implementations, and machine-readable outputs",
+      "evidence": "Scripts, split manifests, reports, and outputs exist locally, but the project has no Git repository/public identifier.",
+      "consequence": "Gate 5 cannot yet be fully satisfied.",
+      "next_action": "Create a clean repository, exclude checkpoints/raw data as appropriate, and publish code plus split/metric artifacts."
+    },
+    {
+      "gate_id": "ROUTE2-MATRIX",
+      "gate_name": "Expanded exposure-matched 108-run package",
+      "status": "BLOCKED",
+      "required_asset": "Pass GEO-SPLIT, COMPLETE-MAPS, and INDEPENDENT-LABELS first",
+      "evidence": "The three hard data gates currently fail; more runs would estimate an outcome that cannot yet be spatially or operationally validated.",
+      "consequence": "Do not launch the 108-run matrix.",
+      "next_action": "Resolve data gates or choose the Route A/R1 tile-benchmark fallback."
+    }
+  ]
+}

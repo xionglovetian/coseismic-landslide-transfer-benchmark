@@ -1,0 +1,10 @@
+region,delta_iou,protocol,model
+Jiuzhai Valley,-0.0651657104,"LORO, epoch-matched",Bottleneck-LiteASK
+Longxi River,0.0862841795,"LORO, epoch-matched",Bottleneck-LiteASK
+Wenchuan,0.0361433866,"LORO, epoch-matched",Bottleneck-LiteASK
+Hokkaido,0.0329,"Fixed source, exploratory",Bottleneck-LiteASK
+Lombok,-0.0075,"Fixed source, exploratory",Bottleneck-LiteASK
+Palu,0.0064,"Fixed source, exploratory",Bottleneck-LiteASK
+Hokkaido,0.0908,"Fixed source, exploratory",ResUNet
+Lombok,-0.0057,"Fixed source, exploratory",ResUNet
+Palu,0.0081,"Fixed source, exploratory",ResUNet

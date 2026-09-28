@@ -1,0 +1,6 @@
+{
+  "draws": 5000,
+  "seed": 20260927,
+  "tile_root": "D:\\landslide_unet_project\\reports\\q2_x3_loro_tiles",
+  "spatial_index": "D:\\landslide_unet_project\\data\\processed\\benchmark_v2_regions_512\\target_spatial_index_all6.csv"
+}

@@ -1,0 +1,16 @@
+{
+  "model": "BottleneckLiteASKUNetPlusPlus",
+  "checkpoint": "D:\\landslide_unet_project\\outputs\\q2_x3_loro_jiuzhai_valley_seed42\\final_model.pth",
+  "run_id": "q2_x3_loro_jiuzhai_valley_seed42",
+  "regime": "pooled_loro",
+  "role": "intervention",
+  "seed": 42,
+  "step": 1120,
+  "regions": [
+    "jiuzhai_valley"
+  ],
+  "threshold": 0.5,
+  "rows": 5925,
+  "output": "D:\\landslide_unet_project\\reports\\q2_x3_loro_tiles\\q2_x3_loro_jiuzhai_valley_seed42.tiles.csv",
+  "elapsed_seconds": 36.79073643684387
+}

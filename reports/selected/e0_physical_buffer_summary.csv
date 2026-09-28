@@ -1,0 +1,10 @@
+﻿seed,region,n_support,n_query_current,min_center_distance_m,min_edge_gap_m,current_min_chebyshev_grid,min_gsd_m,max_gsd_m
+42,hokkaido_iburi_tobu,20,1341,1536.0,0.0,2,3.0,3.0
+2026,hokkaido_iburi_tobu,20,1346,1536.0,0.0,2,3.0,3.0
+777,hokkaido_iburi_tobu,20,1345,1536.0,0.0,2,3.0,3.0
+42,lombok,20,327,2560.0,0.0,2,5.0,5.0
+2026,lombok,20,323,2560.0,0.0,2,5.0,5.0
+777,lombok,20,330,2560.0,0.0,2,5.0,5.0
+42,palu,20,734,2560.0,0.0,2,5.0,5.0
+2026,palu,20,730,2560.0,0.0,2,5.0,5.0
+777,palu,20,730,2560.0,0.0,2,5.0,5.0

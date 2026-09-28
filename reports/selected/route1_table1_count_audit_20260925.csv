@@ -1,0 +1,9 @@
+﻿region,samples,benchmark_role
+hokkaido_iburi_tobu,1484,held_out
+jiuzhai_valley,5925,held_out
+lombok,436,held_out
+longxi_river,2504,held_out
+moxitaidi,980,source_adjacent_cross_gsd
+palu,817,held_out
+wenchuan,178,held_out
+TOTAL,12324,
