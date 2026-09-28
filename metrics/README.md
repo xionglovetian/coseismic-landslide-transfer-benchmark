@@ -16,3 +16,12 @@ reports.
   extension, retained as exploratory evidence.
 
 No image pixels or checkpoint weights are stored in this directory.
+
+## Provenance and superseded files
+
+- `q2_x3_seed_stratified_bootstrap/` contains the current seed-stratified t
+  intervals and the fixed-region bootstrap sensitivity.
+- `figure_source_data/fig4_exposure_matched_effects.csv` is the current
+  manuscript-facing endpoint table.
+- `figure_source_data/fig4_exposure_matched_effects_route1_superseded.csv` is a
+  historical Route 1 plotting input and must not be used for manuscript claims.

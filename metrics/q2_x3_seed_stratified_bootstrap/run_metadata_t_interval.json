@@ -1,0 +1,22 @@
+{
+  "analysis": "seed-stratified t interval",
+  "regions_fixed": [
+    "hokkaido_iburi_tobu",
+    "lombok",
+    "palu"
+  ],
+  "seeds": [
+    42,
+    2026,
+    777
+  ],
+  "df": 2,
+  "endpoints": [
+    "iou",
+    "balanced_iou",
+    "mcc",
+    "precision",
+    "recall"
+  ],
+  "tile_root": "D:\\landslide_unet_project\\reports\\q2_x3_tiles"
+}

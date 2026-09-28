@@ -8,11 +8,25 @@ machine-readable metrics, and selected audit/protocol reports. It does not
 contain the manuscript, source or target imagery, processed chips, model
 checkpoints, or files restricted by the original data licenses.
 
+
+## Which number is authoritative
+
+The headline exposure-matched macro IoU effect reported in the manuscript is the
+q2_x3 Table 6 / Table 8 value, with the seed-stratified interval taking
+precedence for architecture-level inference (+0.0773 for ResUNet,
+seed-stratified interval [+0.0514, +0.1031]). The value +0.0355 in
+`metrics/route1_bootstrap/route1_e1_tile_bootstrap.csv` is a historical
+tile-level bootstrap variant and is not the manuscript headline. Files with
+`fig4` in their names are plotting inputs and may lag the manuscript tables. The
+current authoritative sources are `reports/selected/e1_exposure_matched_contrasts.csv`
+and `metrics/q2_x3_seed_stratified_bootstrap/q2_x3_seed_stratified_t_interval.csv`.
+
 ## Current benchmark scope
 
 - Target benchmark: seven external regions and 12,324 positive 512-pixel chips.
-- Six independent held-out regions used for aggregate evaluation; Moxitaidi is
-  reported separately as a source-adjacent diagnostic.
+- Six region-labelled held-out target units used for aggregate evaluation; physical
+  independence is not asserted. Moxitaidi is reported separately as a
+  source-adjacent diagnostic.
 - Primary models: ResUNet and Bottleneck-LiteASK.
 - Primary seeds: 42, 2026, and 777.
 - Primary input size: 128 pixels unless an experiment explicitly states 256.
@@ -28,8 +42,9 @@ checkpoints, or files restricted by the original data licenses.
   paired model-seed pairs.
 - X3 matched-exposure source expansion produced target-macro IoU deltas of
   `+0.07727` for ResUNet and `+0.04559` for Bottleneck-LiteASK using the
-  component spatial bootstrap. MCC increased in both architectures; balanced
-  IoU intervals crossed zero.
+  seed-stratified t intervals with regions fixed. MCC increased in both
+  architectures but the Bottleneck MCC result is margin-sensitive; balanced IoU
+  is mixed across interval families.
 - X1 resolution retraining did not show a consistent target gain at 256 pixels.
   The target-IoU difference for retrained 256 versus 128 was `-0.02431` for
   ResUNet and `+0.00287` for SegFormer-B0.

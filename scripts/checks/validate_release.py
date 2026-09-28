@@ -32,6 +32,7 @@ FORBIDDEN_SUFFIXES = {
 REQUIRED = [
     "README.md",
     "REPRODUCIBILITY.md",
+    "PROVENANCE.md",
     "FULL_REPRODUCTION.md",
     "INPUTS.md",
     "DATA_LICENSES.md",
@@ -50,6 +51,11 @@ REQUIRED = [
     "scripts/train_exposure_matched.py",
     "scripts/evaluate_q2_checkpoint.py",
     "scripts/q2_x3_spatial_bootstrap.py",
+    "scripts/q2_x3_seed_stratified_reanalysis.py",
+    "metrics/q2_x3_seed_stratified_bootstrap/q2_x3_seed_stratified_t_interval.csv",
+    "metrics/figure_source_data/README.md",
+    "metrics/figure_source_data/fig4_exposure_matched_effects.csv",
+    "metrics/route1_bootstrap/README.md",
     "metrics/q2_x2_augmentation/primary_paired_summary.csv",
     "metrics/q2_x1_summary/grouped.csv",
     "metrics/q2_x3_bootstrap/x3_spatial_cluster_bootstrap.csv",
@@ -131,6 +137,19 @@ def main() -> int:
             )
             if match is None or not close(float(match["mean_delta"]), value):
                 errors.append(f"X3 component-bootstrap anchor mismatch for {architecture}")
+
+    seed_path = ROOT / "metrics/q2_x3_seed_stratified_bootstrap/q2_x3_seed_stratified_t_interval.csv"
+    if seed_path.is_file():
+        rows = read_csv(seed_path)
+        expected = {
+            ("ResUNet", "iou"): (0.0772718653904376, 0.051415226404182, 0.103128504376693),
+            ("Bottleneck-LiteASK", "iou"): (0.0455875689962104, -0.005622849379496, 0.096797987371917),
+            ("Bottleneck-LiteASK", "mcc"): (0.0989679028499328, 0.023974142002776, 0.17396166369709),
+        }
+        for (architecture, endpoint), (mean, low, high) in expected.items():
+            row = next((item for item in rows if item["architecture"] == architecture and item["endpoint"] == endpoint), None)
+            if row is None or not close(float(row["mean_delta"]), mean) or not close(float(row["ci95_low"]), low) or not close(float(row["ci95_high"]), high):
+                errors.append(f"seed-stratified anchor mismatch for {architecture} {endpoint}")
 
     if errors:
         for error in errors:

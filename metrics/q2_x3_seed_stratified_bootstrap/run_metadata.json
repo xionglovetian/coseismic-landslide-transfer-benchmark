@@ -1,0 +1,14 @@
+{
+  "analysis": "seed-stratified fixed-region reanalysis",
+  "regions": [
+    "hokkaido_iburi_tobu",
+    "lombok",
+    "palu"
+  ],
+  "seeds": [
+    42,
+    2026,
+    777
+  ],
+  "draws": 10000
+}
