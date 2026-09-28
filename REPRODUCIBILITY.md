@@ -129,10 +129,17 @@ false-positive area, operational readiness, spatially independent source
 splitting, or independently annotated target validation. Those boundaries are
 retained in the selected reports and must remain in downstream claims.
 
-## 8. Known verification gap
+## 8. Verification status
 
-The package was assembled from existing experiment outputs. Model-level
-training and inference were not rerun during packaging, and checkpoints are not
-included. Metrics and manifests were validated structurally and numerically.
-For a formal archival release, record the exact Git commit and a Zenodo DOI,
-then perform one complete end-to-end rerun from licensed data.
+One complete model-level Gate-D anchor was rerun from the published code:
+X3 ResUNet pooled seed 42. The rerun reproduced the source-validation metrics
+and 2,737-row target-tile CSV bitwise, and the learned checkpoint tensors were
+identical (278 tensors, 24,455,423 elements, zero differences). See
+`reports/verification/GATE_D_X3_RESUNET_SEED42.md`.
+
+The other long-running queues are fully specified by pinned inputs,
+configuration snapshots, and executable queue scripts, but they are not
+represented as independently rerun in this repository until a clean-machine
+execution of `FULL_REPRODUCTION.md` completes. Full reproduction requires the
+licensed CAS data and approximately 20 GiB of Q2 checkpoints or the compute
+time needed to regenerate them.

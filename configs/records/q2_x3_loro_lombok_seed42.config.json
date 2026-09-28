@@ -1,0 +1,17 @@
+{
+  "target_region": "lombok",
+  "manifest": "D:\\landslide_unet_project\\data\\processed\\benchmark_v2_regions_512\\manifest_benchmark_v2.csv",
+  "model": "BottleneckLiteASKUNetPlusPlus",
+  "seed": 42,
+  "steps": 1120,
+  "checkpoint_interval": 280,
+  "batch_size": 32,
+  "input_size": 128,
+  "lr": 0.0001,
+  "min_lr": 1e-06,
+  "weight_decay": 0.0001,
+  "num_workers": 4,
+  "amp": true,
+  "init_checkpoint": "D:\\landslide_unet_project\\outputs\\q2_x2_aug_none_bottleneckliteask_seed42\\best_model.pth",
+  "output_dir": "D:\\landslide_unet_project\\outputs\\q2_x3_loro_lombok_seed42"
+}

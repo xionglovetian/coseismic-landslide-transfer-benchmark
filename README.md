@@ -90,9 +90,14 @@ The repository supports two levels of reproduction:
    expected layout, retrain or place the corresponding checkpoints, then run
    the evaluation and bootstrap scripts.
 
-The second level is hardware- and data-dependent and was not re-executed during
-package assembly. This distinction is recorded explicitly so the repository
-does not overstate verification.
+The second level is hardware- and data-dependent. One complete Gate-D path was
+re-executed from the published code: X3 ResUNet pooled seed 42. It reproduced
+the `metrics.json` and the full 2,737-row tile-metric CSV bitwise, and produced
+278 identical checkpoint tensors (24,455,423 elements, zero differences).
+Details are in `reports/verification/GATE_D_X3_RESUNET_SEED42.md`. The other
+multi-day queues are executable from the pinned data and configurations but
+must still complete on the target machine before the whole study is called
+independently reproduced.
 
 ## License
 

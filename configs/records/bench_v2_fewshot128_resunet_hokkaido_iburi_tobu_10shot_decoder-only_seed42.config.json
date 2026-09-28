@@ -1,0 +1,19 @@
+{
+  "model": "ResUNet",
+  "mode": "decoder-only",
+  "region": "hokkaido_iburi_tobu",
+  "shot": 10,
+  "seed": 42,
+  "input_size": 128,
+  "batch_size": 4,
+  "max_steps": 400,
+  "lr": 5e-05,
+  "min_lr": 1e-06,
+  "weight_decay": 0.0001,
+  "num_workers": 2,
+  "amp": true,
+  "init_checkpoint": null,
+  "support_csv": "D:\\landslide_unet_project\\data\\processed\\fewshot_target_splits\\fewshot_support_seed42.csv",
+  "eval_csv": "D:\\landslide_unet_project\\data\\processed\\fewshot_target_splits\\fewshot_eval_seed42.csv",
+  "output_dir": "D:\\landslide_unet_project\\outputs\\bench_v2_fewshot128_resunet_hokkaido_iburi_tobu_10shot_decoder-only_seed42"
+}

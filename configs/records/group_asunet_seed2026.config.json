@@ -1,0 +1,16 @@
+{
+  "model": "AS_UNet",
+  "loss": "PolyGHMDiceLoss",
+  "train_root": "D:\\landslide_unet_project\\repos\\AS-UNet\\inputs\\data_sum_moxizhen+bijie",
+  "external_root": "D:\\landslide_unet_project\\data\\processed\\resunet_bfa_grouped_224",
+  "output_dir": "D:\\landslide_unet_project\\outputs\\group_asunet_seed2026",
+  "epochs": 50,
+  "batch_size": 16,
+  "input_size": 128,
+  "lr": 0.0001,
+  "weight_decay": 0.0001,
+  "num_workers": 4,
+  "seed": 2026,
+  "val_interval": 5,
+  "amp": true
+}

@@ -1,0 +1,19 @@
+{
+  "model": "ResUNet",
+  "mode": "full",
+  "region": "palu",
+  "shot": 20,
+  "seed": 42,
+  "input_size": 128,
+  "batch_size": 4,
+  "max_steps": 400,
+  "lr": 5e-05,
+  "min_lr": 1e-06,
+  "weight_decay": 0.0001,
+  "num_workers": 2,
+  "amp": true,
+  "init_checkpoint": "D:\\landslide_unet_project\\outputs\\bench_v2_p4_epochwise_resunet_seed42\\epoch_020.pth",
+  "support_csv": "D:\\landslide_unet_project\\data\\processed\\fewshot_target_splits\\fewshot_support_seed42.csv",
+  "eval_csv": "D:\\landslide_unet_project\\data\\processed\\fewshot_target_splits\\fewshot_eval_seed42.csv",
+  "output_dir": "D:\\landslide_unet_project\\outputs\\bench_v2_e2_epoch20_resunet_palu_20shot_full_seed42"
+}

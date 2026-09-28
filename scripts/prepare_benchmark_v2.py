@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import argparse
 import csv
+import os
 import hashlib
 import io
 import posixpath
@@ -18,10 +20,12 @@ PROJECT = Path(_repo_os.environ.get("LANDSLIDE_PROJECT_ROOT", Path(__file__).res
 EXISTING_MANIFEST = PROJECT / "data" / "processed" / "external_regions_512" / "manifest_external.csv"
 OUTPUT_ROOT = PROJECT / "data" / "processed" / "benchmark_v2_regions_512"
 OUTPUT_MANIFEST = OUTPUT_ROOT / "manifest_benchmark_v2.csv"
+DEFAULT_ARCHIVE_ROOT = Path(_repo_os.environ.get("LANDSLIDE_CAS_ARCHIVE_ROOT", PROJECT / "data" / "raw" / "cas_archives"))
+ARCHIVE_ROOT = DEFAULT_ARCHIVE_ROOT
 
 NEW_ARCHIVES = {
     "hokkaido_iburi_tobu": {
-        "archive": Path(r"C:\Users\ASUS\Desktop\数据集\Hokkaido Iburi-Tobu.zip"),
+        "archive": "Hokkaido Iburi-Tobu.zip",
         "region_name": "Hokkaido Iburi-Tobu",
         "acquisition": "2018.09-2018.10",
         "source": "Geospatial Information Authority of Japan",
@@ -30,7 +34,7 @@ NEW_ARCHIVES = {
         "authorization": "CC BY 4.0",
     },
     "lombok": {
-        "archive": Path(r"C:\Users\ASUS\Desktop\数据集\Lombok.zip"),
+        "archive": "Lombok.zip",
         "region_name": "Lombok",
         "acquisition": "2019.05-2019.12",
         "source": "Digital Globe Open Data Program",
@@ -39,7 +43,7 @@ NEW_ARCHIVES = {
         "authorization": "CC BY-NC 4.0",
     },
     "palu": {
-        "archive": Path(r"C:\Users\ASUS\Desktop\数据集\palu.zip"),
+        "archive": "palu.zip",
         "region_name": "Palu",
         "acquisition": "2021.01-2021.11",
         "source": "Digital Globe Open Data Program",
@@ -111,7 +115,10 @@ def prepare_new_region(region, spec):
     image_dir.mkdir(parents=True, exist_ok=True)
     mask_dir.mkdir(parents=True, exist_ok=True)
     rows = []
-    with zipfile.ZipFile(spec["archive"]) as archive:
+    archive_path = Path(spec["archive"])
+    if not archive_path.is_absolute():
+        archive_path = ARCHIVE_ROOT / archive_path
+    with zipfile.ZipFile(archive_path) as archive:
         names = set(archive.namelist())
         stems = sorted(
             posixpath.splitext(posixpath.basename(name))[0]
@@ -141,7 +148,7 @@ def prepare_new_region(region, spec):
                 "id": stem,
                 "image_path": str(image_path),
                 "mask_path": str(mask_path),
-                "source_archive": spec["archive"].name,
+                "source_archive": archive_path.name,
                 "source_image_member": image_member,
                 "source_mask_member": mask_member,
                 "acquisition": spec["acquisition"],
@@ -163,6 +170,17 @@ def prepare_new_region(region, spec):
 
 
 def main():
+    global ARCHIVE_ROOT, EXISTING_MANIFEST, OUTPUT_ROOT, OUTPUT_MANIFEST
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--archive-root", default=str(DEFAULT_ARCHIVE_ROOT))
+    parser.add_argument("--existing-manifest", default=str(EXISTING_MANIFEST))
+    parser.add_argument("--output-root", default=str(OUTPUT_ROOT))
+    parser.add_argument("--output-manifest", default=str(OUTPUT_MANIFEST))
+    args = parser.parse_args()
+    ARCHIVE_ROOT = Path(args.archive_root).resolve()
+    EXISTING_MANIFEST = Path(args.existing_manifest).resolve()
+    OUTPUT_ROOT = Path(args.output_root).resolve()
+    OUTPUT_MANIFEST = Path(args.output_manifest).resolve()
     OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
     rows = load_existing_rows()
     for region, spec in NEW_ARCHIVES.items():
