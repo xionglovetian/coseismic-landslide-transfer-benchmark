@@ -25,3 +25,5 @@ No image pixels or checkpoint weights are stored in this directory.
   manuscript-facing endpoint table.
 - `figure_source_data/fig4_exposure_matched_effects_route1_superseded.csv` is a
   historical Route 1 plotting input and must not be used for manuscript claims.
+
+The compatibility file `figure_source_data/fig4_exposure_matched_causal_effects.csv` is retained only for older review links. It has SHA-256 `1cd6c768155a7ed3e657983569b737e343b224e04c7ba77aeb94566e71674838`.
